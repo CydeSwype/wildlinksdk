@@ -1,17 +1,13 @@
 # wildlink-android SDK
 
-Documentation
-
 ## Wildlink API 1.0.5.0 Apr 17, 2019
 
-### Notes before proceeding
-* Min Android SDK version is 19 (KitKat)
+Minimum requirements
+* Android SDK version 19 (KitKat)
 
-## Documentation
+### Setup for Android Studio 3.4 (latest stable)
 
-## Setup for Android Studio 3.4 (latest stable)
-
-In your project's `Build.gradle` file in `allprojects` add the Maven repository for JitPack
+In your project's `build.gradle` file in `allprojects` add the Maven repository for JitPack
 
 ```Maven
 
