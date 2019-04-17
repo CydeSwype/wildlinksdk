@@ -19,7 +19,7 @@ allprojects {
 
 ```
 
-You will prompted to Sync.  Select the Sync Now option and allow Gradle to complete the sync.
+If you are prompted to Sync, then select the Sync Now option and allow Gradle to complete the sync.
 
 Next, in the app module, add the Wildlink SDK to your dependencies:
 
@@ -31,21 +31,25 @@ dependencies {
 
 ```
 
+Again, if you're prompted to sync, select Sync Now.
+
+
 ### Usage in your client application
 
-Extend your application class
+The Wildlink SDK takes credentials specific to your account, automatically generates authentication tokens and collects device make, model and OS version information for analysis.  You may then start the clipboard monitor service which will automatically collect eligible URLs for later analysis (without changing the user's clipboard value).
 
 ```Java
 
-// for app ID and secret please contact Wildfire (support@wildlink.me)
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // initialize the SDK with your credentials (for app ID and secret please contact Wildfire: support@wildlink.me)
         WildlinkSdk.getIntance().init(this, "YOUR_APP_ID", "YOUR_APP_SECRET");
 
+        // begin monitoring the clipboard for eligible partner URLs
         WildlinkSdk.getIntance().startClipboardMonitoringService(new SimpleListener() {
             @Override
             public void onSuccess() {
