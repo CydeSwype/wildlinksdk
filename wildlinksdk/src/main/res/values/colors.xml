@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff2f9dc5</color>
+    <color name="colorPrimaryDark">#ff2f9dc5</color>
+    <color name="colorAccent">#FFffffff</color>
+    <color name="wl_notification_background_color">#ffffffff</color>
+    <color name="wl_notification_title_text_color">#ff000000</color>
+    <color name="wl_notification_subtitle_text_color">#ff8e8e8e</color>
+    <color name="wl_notification_content_text_color">#ff000000</color>
+    <color name="wl_notification_button_text_color">#ff2f9dc5</color>
+    <color name="wl_notification_lower_button_area_background_color">#fff5f5f5</color>
+    <color name="wl_whats_new_dialog_background_color">#ffffffff</color>
+    <color name="wl_button_background_unselected">#ffe0e0e0</color>
+    <color name="wl_button_background_selected">#ff2f9dc5</color>
+    <color name="wl_button_text_selected">#ffffffff</color>
+    <color name="wl_button_text_unselected">#ff000000</color>
+    <color name="wl_button_outer_color">#ff000000</color>
+    <color name="wl_whats_new_link_hightlight_color">#ff2f9dc5</color>
+    <color name="wl_whats_new_link_text_color">#ff0000ff</color>
+    <color name="wl_black">#ff000000</color>
+
+    <color name="wl_orange">#ff2f9dc5</color>
+    <color name="wl_settings_list_row_text_color">#ff000000</color>
+    <color name="wl_settings_list_row_sub_text_color">#ff8e8e8e</color>
+
+
+    <color name="wl_login_dialog_background_color">#ffffffff</color>
+    <color name="wl_light_gray">#fff0f0f0</color>
+    <color name="wl_verify_code_background_color">#ffffffff</color>
+
+</resources>

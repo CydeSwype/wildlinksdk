@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/notification_buttons_layout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="3"
+              android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/wl_notification_enabled_settings_container"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/wl_notification_button_selector"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/wl_notification_enabled_settings_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:clickable="false"
+
+                android:text="@string/wl_notification_button_settings_text"
+                android:textStyle="bold"
+                android:textColor="@drawable/wl_notification_button_text_selector"
+                android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wl_notification_enabled_earnings_container"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/wl_notification_button_selector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            >
+
+            <TextView
+                android:id="@+id/wl_notification_enabled_earnings_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/wl_notification_button_view_earnings_text"
+                android:textStyle="bold"
+
+                android:textColor="@drawable/wl_notification_button_text_selector"
+                android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wl_notification_enabled_terms_container"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/wl_notification_button_selector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/wl_notification_enabled_terms_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+
+                android:text="@string/wl_notification_enabled_terms_text"
+                android:textColor="@drawable/wl_notification_button_text_selector"
+                android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+        </LinearLayout>
+
+
+</LinearLayout>

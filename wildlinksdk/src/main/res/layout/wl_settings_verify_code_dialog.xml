@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/wl_verify_code_dialog_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="@dimen/wl_verify_code_dialog_right_margin"
+        android:layout_marginLeft="@dimen/wl_verify_code_dialog_left_margin"
+        android:layout_marginRight="@dimen/wl_verify_code_dialog_right_margin"
+        android:layout_marginStart="@dimen/wl_verify_code_dialog_left_margin"
+        android:layout_marginTop="@dimen/wl_verify_code_dialog_top_margin"
+        android:background="@color/wl_verify_code_background_color"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/wl_verify_code_dialog_wl_image_width_height"
+                android:layout_height="@dimen/wl_verify_code_dialog_wl_image_width_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/wf_app_icon_orange"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_toRightOf="@id/image"
+                android:text="@string/wl_verify_code_dialog_title_text"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/wl_verify_code_dialog_title_text_size"/>
+
+        </RelativeLayout>
+
+        <TextView
+
+            android:id="@+id/wl_verify_code_content_tv"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/wl_verify_code_dialog_content_text_margin_top"
+            android:text="@string/wl_verify_code_dialog_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/wl_verify_code_dialog_text_size"/>
+
+        <EditText
+            android:id="@+id/wl_validation_code"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/settings_edittext_drawable"
+            android:hint="@string/wl_verify_code_dialog_phone_hint"
+            android:inputType="number"
+            android:paddingLeft="10dp"/>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+
+            <View
+                android:id="@+id/strut"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"/>
+
+            <RelativeLayout
+
+                android:id="@+id/wl_verify_code_resend_container"
+                style="@style/WlButtonContainerStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/strut"
+
+
+                android:clickable="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    style="@style/WlButtonContainerStyle.LargeButtonTextStyle"
+                    android:clickable="false"
+                    android:text="@string/wl_verify_code_dialog_resend_text"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:id="@+id/wl_verify_code_verify_container"
+                style="@style/WlButtonContainerStyle"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+
+
+                android:layout_toRightOf="@id/strut"
+                android:clickable="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    style="@style/WlButtonContainerStyle.LargeButtonTextStyle"
+                    android:clickable="false"
+                    android:text="@string/wl_verify_code_dialog_verify_text"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <TextView
+
+            android:id="@+id/wl_verify_code_dialog_close"
+            style="@style/WlButtonContainerStyle.LargeButtonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:text="@string/wl_verify_code_dialog_close_text"
+            android:textSize="@dimen/wl_button_text_size"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/wl_progress_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/wl_verify_code_dialog_container"
+        android:layout_alignEnd="@id/wl_verify_code_dialog_container"
+        android:layout_alignLeft="@id/wl_verify_code_dialog_container"
+        android:layout_alignRight="@id/wl_verify_code_dialog_container"
+        android:layout_alignStart="@id/wl_verify_code_dialog_container"
+
+        android:layout_alignTop="@id/wl_verify_code_dialog_container"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/wl_progress_indicator"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/wl_circular_progress"/>
+    </RelativeLayout>
+</RelativeLayout>

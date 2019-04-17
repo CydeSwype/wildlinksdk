@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/edit_name"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/white"
+                android:padding="5dip"
+    >
+
+    <RelativeLayout
+        android:id="@+id/title_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:clickable="false"
+            android:contentDescription="Application Icon"
+            android:src="@drawable/wf_app_icon_orange"/>
+
+        <TextView
+            android:id="@+id/ok_dialog_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/ok_dialog_title_separator_vw"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/title_container"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/ok_dialog_main_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ok_dialog_title_separator_vw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_below="@id/ok_dialog_main_tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dip"
+
+                    android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/ok_dialog_cancel_btn"
+            android:layout_marginTop="20dp"
+            style="@style/WlButtonContainerStyle">
+
+            <TextView android:id="@+id/cancel_tv"
+                      android:text="Cancel"
+
+                      style="@style/WlButtonContainerStyle.LargeButtonTextStyle"/>
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+
+            android:layout_alignParentRight="true"
+            android:id="@+id/ok_dialog_ok_container"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            style="@style/WlButtonContainerStyle">
+
+
+            <TextView android:id="@+id/ok_dialog_ok_btn"
+                      android:text="\u00A0\u00A0\u00A0\u00A0Ok\u00A0\u00A0\u00A0\u00A0"
+
+                      style="@style/WlButtonContainerStyle.LargeButtonTextStyle"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

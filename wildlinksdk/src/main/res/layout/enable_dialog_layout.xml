@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+
+              android:layout_height="match_parent" >
+
+
+    <LinearLayout
+        android:id="@+id/wl_whats_new_dialog_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@color/wl_whats_new_dialog_background_color">
+
+        <RelativeLayout
+
+            android:layout_marginTop="@dimen/wl_whats_new_dialog_top_margin"
+            android:layout_marginLeft="@dimen/wl_whats_new_dialog_left_margin"
+            android:layout_marginStart="@dimen/wl_whats_new_dialog_left_margin"
+            android:layout_marginEnd="@dimen/wl_whats_new_dialog_right_margin"
+            android:layout_marginRight="@dimen/wl_whats_new_dialog_right_margin"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+               <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/wl_whats_new_image_width_height"
+                android:layout_height="@dimen/wl_whats_new_image_width_height"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/wf_app_icon_orange"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@id/image"
+                android:text="@string/wl_whats_new_dialog_title_text"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/wl_whats_new_dialog_title_text_size"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginLeft="@dimen/wl_whats_new_dialog_left_margin"
+            android:layout_marginStart="@dimen/wl_whats_new_dialog_left_margin"
+            android:layout_marginEnd="@dimen/wl_whats_new_dialog_right_margin"
+            android:layout_marginRight="@dimen/wl_whats_new_dialog_right_margin"
+            android:id="@+id/wl_whats_new_content_tv"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/wl_whats_new_dialog_content_text_margin_top"
+            android:text="@string/wl_whats_new_dialog_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/wl_whats_new_dialog_text_size"/>
+
+
+        <RelativeLayout
+
+            style="@style/WlButtonContainerStyle"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/wl_whats_new_dialog_enable_button_margin_top"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:id="@+id/wl_whats_new_ebable_container"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:clickable="false"
+                style="@style/WlButtonContainerStyle.LargeButtonTextStyle"
+                android:text="@string/wl_whats_new_dialog_enable_button_text"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/wl_whats_new_learn_more_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/wl_whats_new_dialog_learn_more_margin_top"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/wl_whats_new_dialog_text_size"/>
+
+        <TextView
+            android:id="@+id/wl_whats_new_no_thanks_tv"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/wl_whats_new_dialog_no_thanks_margin_top"
+            android:layout_marginBottom="@dimen/wl_whats_new_dialog_no_thanks_margin_bottom"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/wl_whats_new_dialog_text_size"/>
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@color/wl_button_background_unselected">
+
+            <TextView
+                android:layout_marginLeft="@dimen/wl_whats_new_dialog_left_margin"
+                android:layout_marginStart="@dimen/wl_whats_new_dialog_left_margin"
+                android:layout_marginEnd="@dimen/wl_whats_new_dialog_right_margin"
+                android:layout_marginRight="@dimen/wl_whats_new_dialog_right_margin"
+                android:layout_marginBottom="@dimen/wl_whats_new_dialog_bottom_margin"
+
+                android:id="@+id/wl_whats_new_terms_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/wl_whats_new_dialog_terms_margin_top"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/wl_whats_new_dialog_text_size"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

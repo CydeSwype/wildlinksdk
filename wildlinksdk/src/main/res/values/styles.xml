@@ -1,0 +1,79 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+
+
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+
+    <style name="WlButtonContainerStyle" parent="@android:style/Widget">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusableInTouchMode">false</item>
+
+        <item name="android:background">@drawable/wl_button_selector</item>
+
+    </style>
+
+    <style name="WlButtonContainerStyle.LargeButtonTextStyle"
+           parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/wl_button_text_size</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@drawable/wl_button_text_selector</item>
+
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme.PopupOverlay"
+           android:background="@color/wl_orange"
+           parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="ThemeOverlay.WlApp.ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <!-- Parent theme sets colorControlNormal to textColorPrimary. -->
+        <item name="android:textColorPrimary">#ffffffff</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="AppTheme.BackArrowOnly">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="WlSettingsEditTextStyle" parent="@android:style/Widget.EditText">
+        <item name="android:background">#ffffffff</item>
+        <item name="android:textColorHint">@color/wl_settings_list_row_sub_text_color</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textCursorDrawable">@drawable/settings_edittext_drawable</item>
+
+    </style>
+
+    <style name="WlOkDialog" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+</resources>

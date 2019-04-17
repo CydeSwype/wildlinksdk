@@ -1,0 +1,412 @@
+plugins {
+    id 'de.undercouch.download' //version '3.4.3'
+}
+
+apply plugin: 'com.android.library'
+
+
+apply plugin: 'com.jfrog.artifactory'
+
+apply plugin: 'de.undercouch.download'
+
+apply plugin: 'com.jfrog.bintray'
+
+
+apply plugin: 'com.jfrog.artifactory'
+apply plugin: 'maven-publish'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.wildlink'
+
+
+import de.undercouch.gradle.tasks.download.Download
+
+gradle.projectsEvaluated {
+    preBuild.dependsOn(buildSqlite)
+}
+
+
+
+def thisLibMavenGroupId = 'com.github.wildlink'
+def thisLibMavenArtifactId = 'wildlinksdk'
+
+
+
+
+// you must change this first
+
+
+
+// versionName is a property passed in on the command line
+// for jfrog
+//./gradlew   assembleProdRelease artifactoryPublish
+//./gradlew   assembleDevDebug artifactoryPublish
+//./gradlew   assembleLocalDebug artifactoryPublish
+
+
+//these 2 are required for jitpack
+def thisLibFlavorType = "prod" // local|dev\prod
+def thisLibBinaryType = "release"  // Release|Debug
+
+// this one is only reaquired for local builds
+def v = "1.0.5.0"  // prod is 1.0.0.x , local is 1.0.x.sl
+
+
+publishing {
+    publications {
+
+        println "publishing"
+        aar(MavenPublication) {
+            groupId thisLibMavenGroupId
+
+
+
+            println "outputs build/outputs/aar/${thisLibMavenArtifactId}-${thisLibFlavorType}-${thisLibBinaryType}.aar"
+
+            println "thisLibMavenArtifactId=" + thisLibMavenArtifactId
+
+            version = v
+            artifactId thisLibMavenArtifactId
+            artifact("build/outputs/aar/${thisLibMavenArtifactId}-${thisLibFlavorType}-${thisLibBinaryType}.aar")
+
+            pom.withXml {
+
+                println "in pom.withXml"
+                def dependenciesNode = asNode().appendNode('dependencies')
+                println "dep=" + dependenciesNode
+
+                //Iterate over the compile dependencies (we don't want the test ones), adding a <dependency> node for each
+                configurations.api.allDependencies.each {
+
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.group)
+                    dependencyNode.appendNode('artifactId', it.name)
+                    dependencyNode.appendNode('version', it.version)
+
+
+                }
+
+            }
+        }
+    }
+}
+artifactory {
+    contextUrl = 'http://localhost:8083/artifactory'
+
+    publish {
+        repository {
+            repoKey = 'libs-release-local'
+            username = ""
+            password = ""
+        }
+        defaults {
+            // Specify the artifacts to published to Artifactory.
+            publications('aar')
+            publishArtifacts true
+
+
+            // Properties to be attached to the published artifacts.
+            properties = ['qa.level': 'basic', 'dev.team': 'core']
+
+            publishPom true // Publish generated POM file to Artifactory
+        }
+    }
+}
+
+
+
+android {
+
+    defaultPublishConfig  "prodRelease"
+
+    println defaultPublishConfig
+
+    compileSdkVersion 28
+    defaultConfig {
+
+        minSdkVersion 19
+        targetSdkVersion 28
+        
+        multiDexEnabled true
+        // version '1'
+
+        project.archivesBaseName = "wildlinksdk"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "apiVersion", "\"v1\""
+        buildConfigField "String", "linkUrlPostfix", "\"?url=\""
+        buildConfigField "String", "configUrl", "\"example.com/config\""
+        buildConfigField "String", "httpConfigUrl", "\"http://example.com/config\""
+        buildConfigField "String", "httpsConfigUrl", "\"https://example.com/config\""
+        buildConfigField "String", "logUrl", "\"example.com/log\""
+        buildConfigField "String", "httpLogUrl", "\"http://example.com/log\""
+        buildConfigField "String", "httpsLogUrl", "\"https://example.com/log\""
+        buildConfigField "String", "sdk_version", "\"${v}\""
+        buildConfigField "String", "user_agent", "\"Wildlink Sdk for Android\""
+
+        buildConfigField "String", "prod", "\"https://api.wfi.re\""
+        buildConfigField "String", "dev", "\"https://dev-api.wfi.re\""
+
+
+    }
+
+    flavorDimensions "tier"
+
+    productFlavors {
+
+        dev {
+            dimension "tier"
+
+
+            buildConfigField "String", "SQLITE_DB_NAME", "\"wildlink_sqlite_dev.db\""
+
+            resValue "string", "app_name", "Wildlink(Dev)"
+            buildConfigField "String", "SQLITE_DB_VERSION", "\"4\""
+
+            buildConfigField "String", "authHeaderPrefix", "\"WFAV1\""
+            buildConfigField "String", "sdkAppID", "\"1\""
+
+            buildConfigField "String", "baseWebUrl", "\"https://dev-www.wildlink.me\""
+            buildConfigField "String", "baseApiUrl", "\"https://dev-api.wfi.re\""
+            buildConfigField "String", "vanityBaseUrl", "\"http://wild.link/\""
+            buildConfigField "String", "privacy_policy", "\"/privacy\""
+            buildConfigField "String", "terms", "\"/terms\""
+            buildConfigField "String", "earnings", "\"/earnings\""
+
+
+            resValue "string", "FIREBASE_APP_KEY", "1:140596935653:android:c26039382b8579fa"
+            resValue "string", "gcm_defaultSenderId", "140596935653"
+            resValue "string", "google_api_key", "AIzaSyBAoieCGsDfFzfBsgVL6brUJWOCUJL5EZc"
+            resValue "string", "google_app_id", "1:140596935653:android:c26039382b8579fa"
+            resValue "string", "project_id", "wildlink-b867a"
+            resValue "string", "default_web_client_id", "140596935653-jc64cnsui6r062hhpvb0asaoh81049i7.apps.googleusercontent.com"
+            resValue "string", "google_app_id", "1:140596935653:android:c26039382b8579fa"
+            resValue "string", "mobilesdk_app_id", "1:140596935653:android:c26039382b8579fa"
+            buildConfigField "String", "defaultServerFlavor", "\"dev\""
+
+        }
+
+        prod {
+            dimension "tier"
+
+            resValue "string", "app_name", "Wildlink"
+
+            buildConfigField "String", "SQLITE_DB_NAME", "\"wildlink_sqlite_prod.db\""
+            buildConfigField "String", "SQLITE_DB_VERSION", "\"4\""
+
+            buildConfigField "String", "authHeaderPrefix", "\"WFAV1\""
+            buildConfigField "String", "sdkAppID", "\"1\""
+
+            buildConfigField "String", "baseWebUrl", "\"https://www.wildlink.me\""
+            buildConfigField "String", "baseApiUrl", "\"https://api.wfi.re\""
+
+            buildConfigField "String", "vanityBaseUrl", "\"http://wild.link/\""
+            buildConfigField "String", "privacy_policy", "\"/privacy\""
+            buildConfigField "String", "terms", "\"/terms\""
+            buildConfigField "String", "earnings", "\"/earnings\""
+
+
+            resValue "string", "FIREBASE_APP_KEY", "1:140596935653:android:b30b86d0e5c1e023"
+            resValue "string", "gcm_defaultSenderId", "140596935653"
+            resValue "string", "google_api_key", "AIzaSyBAoieCGsDfFzfBsgVL6brUJWOCUJL5EZc"
+            resValue "string", "google_app_id", "1:140596935653:android:b30b86d0e5c1e023"
+            resValue "string", "project_id", "wildlink-b867a"
+            resValue "string", "default_web_client_id", "140596935653-jc64cnsui6r062hhpvb0asaoh81049i7.apps.googleusercontent.com"
+            resValue "string", "google_app_id", "1:140596935653:android:b30b86d0e5c1e023" // this is the key that enables Crash Reporting in Firebase
+
+            resValue "string", "mobilesdk_app_id", "1:140596935653:android:b30b86d0e5c1e023"
+            buildConfigField "String", "defaultServerFlavor", "\"prod\""
+
+        }
+
+
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/BCKEY.DSA'
+        exclude 'AUTHORS'
+        exclude 'META-INF/maven/com.google.guava/guava/pom.properties'
+        exclude 'META-INF/maven/com.google.guava/guava/pom.xml'
+    }
+
+    testOptions { unitTests { includeAndroidResources = true } }
+
+
+    testBuildType "debug"
+
+
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+
+        resolutionStrategy.eachDependency { details ->
+            if (details.requested.group == 'com.android.support' &&
+                !details.requested.name.contains('multidex')) {
+                details.useVersion "28.0.0"
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            println "debug build type"
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled false
+          
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    // ndk gradle support is still very bad so it's built the regular ndk-build
+    sourceSets.main.jni.srcDirs = ['src/main/none']
+
+
+}
+
+
+ext {
+
+
+    sqliteDistributionUrl = 'http://sqlite.org/2019/sqlite-amalgamation-3270200.zip'
+   // sqliteDistributionUrl = 'http://sqlite.org/2018/sqlite-amalgamation-3220000.zip'
+    pomXml = {
+        resolveStrategy = Closure.DELEGATE_FIRST
+        name project.name
+        description project.description
+        url 'https://github.com/requery/sqlite-android'
+        scm {
+            url 'https://github.com/requery/sqlite-android.git'
+            connection 'scm:git:git://github.com/requery/sqlite-android.git'
+            developerConnection 'scm:git:git@github.com/requery/sqlite-android.git'
+        }
+        licenses {
+            license {
+                name 'The Apache Software License, Version 2.0'
+                url 'http://www.apache.org/license/LICENSE-2.0.txt'
+                distribution 'repo'
+            }
+        }
+        developers {
+            developer {
+                id ''
+                name ''
+            }
+        }
+    }
+}
+
+
+Properties properties = new Properties()
+File localProperties = project.rootProject.file('local.properties')
+if (localProperties.exists()) {
+    properties.load(localProperties.newDataInputStream())
+}
+
+bintray {
+    user = properties.getProperty('bintray.user')
+    key = properties.getProperty('bintray.apikey')
+    publications = ['maven']
+    pkg {
+        repo = 'requery'
+        name = 'sqlite-android'
+        userOrg = 'requery'
+        licenses = ['Apache-2.0']
+        vcsUrl = 'https://github.com/requery/sqlite-android.git'
+        version {
+            name = project.version
+            desc = project.description
+            released = new Date()
+        }
+    }
+}
+
+task sourcesJar(type: Jar) {
+    classifier = 'sources'
+    from android.sourceSets.main.java.srcDirs
+}
+
+task javadoc(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+    classpath += configurations.compile
+    failOnError false;
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+task downloadSqlite(type: Download) {
+    src project.sqliteDistributionUrl
+    dest 'src/main/jni/sqlite.zip'
+}
+
+task nativeLibsToJar(type: Jar, description: 'create a jar archive of the native libs') {
+
+
+    println "-----------------$buildDir"
+
+    destinationDir file("$buildDir/native-libs")
+    baseName 'native-libs'
+    from fileTree(dir: 'src/main/jnilibs', include: '**/*.so')
+    into 'lib/'
+}
+
+task installSqlite(dependsOn: downloadSqlite, type: Copy) {
+    from zipTree(downloadSqlite.dest).matching {
+        include '*/sqlite3.*'
+        eachFile { it.setPath(it.getName()) }
+    }
+    into 'src/main/jni/sqlite'
+}
+
+def ndkDir = System.getenv('ANDROID_NDK_HOME') ?: properties.getProperty('ndk.dir')
+
+task buildSqlite(dependsOn: installSqlite, type: Exec) {
+    workingDir 'src/main/jni'
+    commandLine ndkDir + '/ndk-build'
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+
+    api 'android.arch.persistence:db:1.0.0'
+    api 'com.android.support:support-core-utils:28.0.0'
+
+
+    api 'com.squareup.okhttp3:okhttp:3.10.0'
+    api 'com.squareup.okio:okio:1.14.0'
+
+    api 'com.google.code.gson:gson:2.8.0'
+    api 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    api 'joda-time:joda-time:2.9.6'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+
+    api 'org.greenrobot:eventbus:3.1.1'
+    api 'com.android.support:design:28.0.0'
+    api 'com.google.firebase:firebase-core:16.0.0'
+    api 'com.google.firebase:firebase-messaging:17.0.0'
+
+    api 'com.google.android.gms:play-services-analytics:16.0.0'
+
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+
+
+    testCompile 'junit:junit:4.12'
+
+
+}

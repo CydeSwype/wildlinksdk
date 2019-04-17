@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/wl_config_dialog_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="@dimen/wl_login_dialog_right_margin"
+        android:layout_marginLeft="@dimen/wl_login_dialog_left_margin"
+        android:layout_marginRight="@dimen/wl_login_dialog_right_margin"
+        android:layout_marginStart="@dimen/wl_login_dialog_left_margin"
+        android:layout_marginTop="@dimen/wl_login_dialog_top_margin"
+        android:background="@color/wl_login_dialog_background_color"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/wl_login_dialog_wl_image_width_height"
+                android:layout_height="@dimen/wl_login_dialog_wl_image_width_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/wf_app_icon_orange"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_toRightOf="@id/image"
+                android:text="@string/wl_config_title_text"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/wl_login_dialog_title_text_size"/>
+
+        </RelativeLayout>
+
+        <TextView
+
+            android:id="@+id/wl_config_content_tv"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/wl_login_dialog_content_text_margin_top"
+            android:text="@string/wl_config_dialog_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/wl_login_dialog_text_size"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:id="@+id/base_url_spinner"
+
+            android:layout_height="wrap_content">
+
+
+        </Spinner>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="1dp" android:layout_centerHorizontal="true"
+                android:layout_height="1dp" android:id="@+id/strut"/>
+        <RelativeLayout
+
+
+            android:id="@+id/wl_config_ok_container"
+            style="@style/WlButtonContainerStyle"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/strut"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                style="@style/WlButtonContainerStyle.LargeButtonTextStyle"
+                android:clickable="false"
+                android:text="@string/wl_config_dialog_ok_text"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+
+            android:id="@+id/wl_config_cancel_container"
+            style="@style/WlButtonContainerStyle"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@id/strut"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                style="@style/WlButtonContainerStyle.LargeButtonTextStyle"
+                android:clickable="false"
+                android:text="@string/wl_config_dialog_cancel_text"/>
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/wl_progress_container"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/wl_config_dialog_container"
+        android:layout_alignEnd="@id/wl_config_dialog_container"
+        android:layout_alignLeft="@id/wl_config_dialog_container"
+        android:layout_alignRight="@id/wl_config_dialog_container"
+
+        android:layout_alignStart="@id/wl_config_dialog_container"
+        android:layout_alignTop="@id/wl_config_dialog_container">
+
+        <ProgressBar
+            android:id="@+id/wl_progress_indicator"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/wl_circular_progress"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+devDebug
+debug build type
+-----------------/Volumes/lacie/mss/wild/wildlinksdk/wildlinksdk/build
+Configuration 'testCompile' in project ':wildlinksdk' is deprecated. Use 'testImplementation' instead.
+publishing
+outputs build/outputs/aar/wildlinksdk-dev-debug.aar
+thisLibMavenArtifactId=wildlinksdk
+Publication maven not found in project :wildlinksdk.
+[armeabi-v7a] Install        : libsqlite3x.so => ../jniLibs/armeabi-v7a/libsqlite3x.so
+[arm64-v8a] Install        : libsqlite3x.so => ../jniLibs/arm64-v8a/libsqlite3x.so
+[x86] Install        : libsqlite3x.so => ../jniLibs/x86/libsqlite3x.so
+[x86_64] Install        : libsqlite3x.so => ../jniLibs/x86_64/libsqlite3x.so
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+See https://docs.gradle.org/4.7/userguide/command_line_interface.html#sec:command_line_warnings
+15 actionable tasks: 3 executed, 12 up-to-date

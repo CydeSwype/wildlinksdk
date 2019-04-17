@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/notification_buttons_layout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="3"
+    android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/wl_notification_converted_preview_container"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:background="@drawable/wl_notification_button_selector"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/wl_notification_converted_preview_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:weightSum="3"
+                android:text="@string/wl_notification_buttons_converted_state_preview"
+
+                android:textStyle="bold"
+                android:textColor="@drawable/wl_notification_button_text_selector"
+                android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wl_notification_converted_undo_container"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:background="@drawable/wl_notification_button_selector"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/wl_notification_converted_undo_tv"
+                android:layout_width="match_parent"
+                android:weightSum="3"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/wl_notification_buttons_converted_state_undo"
+                android:textStyle="bold"
+
+                android:textColor="@drawable/wl_notification_button_text_selector"
+                android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wl_notification_converted_settings_container"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:background="@drawable/wl_notification_button_selector"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/wl_notification_converted_settings_tv"
+                android:layout_width="match_parent"
+
+                android:weightSum="3"
+                android:textStyle="bold"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/wl_notification_buttons_converted_state_settings"
+                android:textColor="@drawable/wl_notification_button_text_selector"
+                android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+        </LinearLayout>
+
+
+</LinearLayout>

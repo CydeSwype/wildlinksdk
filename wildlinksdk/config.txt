@@ -1,0 +1,694 @@
+-injars /Volumes/lacie/mss/wild/wildlinksdk/wildlinksdk/build/intermediates/classes/prod/release(**.class)
+-injars /Volumes/lacie/mss/wild/wildlinksdk/wildlinksdk/build/intermediates/transforms/mergeJavaRes/prod/release/0.jar(!**.class)
+-outjars /Volumes/lacie/mss/wild/wildlinksdk/wildlinksdk/build/intermediates/transforms/proguard/prod/release/0.jar
+
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/db-1.0.0.aar/eeecf06214465df70392b80d5dc943ae/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/298457e884e9aa99f3ff579d5f64e923/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/27cb9290c11f7f345dd1a8d88c1704d4/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.0.0.aar/ef7a742541c151c0a53a0b100617026b/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/play-services-analytics-16.0.0.aar/b954ea01b8428c5cf1f66a45ea4926df/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.0.aar/c68d6cafba45db102f9a5f375b157665/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.0.aar/c2adff2ab7994d37997ac421b540b099/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/8b0eb813aa95c9158fe7dbc0931d38df/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.0.0.aar/bfde31ec57e58fa9eb7dfa7628e05431/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/79439e35d6f57e1b8bb0a196b38a7613/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/fa9f745487cc28fd08075983857e60ee/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-v4-impl-16.0.0.aar/cd38aa2031e55a5f97b88286daed0b84/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-16.0.0.aar/6402d555339c2e38661f96f3475e2033/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/6e8b4e0fe31b0cfa7a634d0af515d461/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/91eb4a64a4823166778d4cc30c52375e/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/c7b4b4c70755b15965eb900ee2e8a78d/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/ba4c579a77dab90f65839ff6a26d0414/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/40f9c2222bd6f69c48a2ed8473ed3d52/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/74b1b4b88a0336f2303236ab13fe900e/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/743973204f6299661f9a3935d31b0de1/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/6cc315cd40e6303d77cce8bcc102f886/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/5070f65ed3aa47a56be60fe6c987a6bb/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/9292f7b8a1cee530f57dfece42a3daee/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/973ea8aea1079a249af62dbd36c4ad37/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/f75790ed9a0a87ca937a9cabe0e8cdc5/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/ca542823dd34a013505aad990b3c6842/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.4.1/381fc1096ba65040d8e80ea43b2e1d9bad02345e/logging-interceptor-3.4.1.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.10.0/7ef0f1d95bf4c0b3ba30bbae25e0e562b05cf75e/okhttp-3.10.0.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.14.0/102d7be47241d781ef95f1581d414b0943053130/okio-1.14.0.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.6/e370a92153bf66da17549ecc78c69ec6c6ec9f41/joda-time-2.9.6.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/org.greenrobot/eventbus/3.1.1/5cd91fd014f5b72292f959748c20a2cefefae77d/eventbus-3.1.1.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/f2eca285084fc9d12db948bb8ac86832/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/c983bf92443a723039c89f2092cb2ae7/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/9cc86245c2e784f7fed270fca0d7ba9c/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/7194e32e356748b179d06de3d1894f8e/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/899904375ea3d732f44b7e0211da3549/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/245d1e0fb2237f991fa8898966e81794/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/b960a0501259b3ea464b492348fc8d6d/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/7f59bf194523006c5c0bbf5fab58af19/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/3293e0937314c3e6bbd81ae0c1cdec5b/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/f9206c71438060fe594f48d19f3c82c8/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/bf2283eb8d6378d5718e581b135c1169/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/58eaebea53693ff9ff4f2559298b1e61/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f0ac34b1f48ca6e26d79ceaece510d6d/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/c8bf25e92cae5e0b4c9e2b2af80b4d86/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/b501946a275f8d13cf67e7a68c8a4db2/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/9f20732a6d9a02018153e64af66e3634/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/6daa0117cb2093a8d3ce0598ae4f686c/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/6993edb72c5efa7cf903017d7d5ffc64/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/com.android.support/collections/28.0.0/c1bcdade4d3cc2836130424a3f3e4182c666a745/collections-28.0.0.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/39b31f45a4a85c8941f06c75c454ffb1/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6c7c362220aa5561f23e79cdd7f9fcde/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/7e83e3a9fddd60cdabf9947388526209/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/fcde7abf099d6b2b2785dd8b70743632/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/8b0d5fd6fdec83dfa539830aa27229ba/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/87136fb1a822268ad2bb20a23646a595/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.1/207a6efae6a3555e326de41f76bdadd9a239cbce/common-1.1.1.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e75f6e91f15612a4faa87342aa1736fa/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.1/e55b70d1f5620db124b3e85a7f4bdc7bd48d9f95/common-1.1.1.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/28.0.0/ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8/support-annotations-28.0.0.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-15.0.4.aar/ff5e37e44719905ded7e44e68d7c390d/jars/classes.jar(**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/db-1.0.0.aar/eeecf06214465df70392b80d5dc943ae/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/298457e884e9aa99f3ff579d5f64e923/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/27cb9290c11f7f345dd1a8d88c1704d4/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.0.0.aar/ef7a742541c151c0a53a0b100617026b/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/play-services-analytics-16.0.0.aar/b954ea01b8428c5cf1f66a45ea4926df/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.0.aar/c68d6cafba45db102f9a5f375b157665/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.0.aar/c2adff2ab7994d37997ac421b540b099/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.0.aar/8b0eb813aa95c9158fe7dbc0931d38df/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.0.0.aar/bfde31ec57e58fa9eb7dfa7628e05431/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/79439e35d6f57e1b8bb0a196b38a7613/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/fa9f745487cc28fd08075983857e60ee/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-v4-impl-16.0.0.aar/cd38aa2031e55a5f97b88286daed0b84/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-16.0.0.aar/6402d555339c2e38661f96f3475e2033/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/6e8b4e0fe31b0cfa7a634d0af515d461/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/91eb4a64a4823166778d4cc30c52375e/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/c7b4b4c70755b15965eb900ee2e8a78d/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/ba4c579a77dab90f65839ff6a26d0414/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/40f9c2222bd6f69c48a2ed8473ed3d52/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/74b1b4b88a0336f2303236ab13fe900e/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/743973204f6299661f9a3935d31b0de1/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/6cc315cd40e6303d77cce8bcc102f886/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/5070f65ed3aa47a56be60fe6c987a6bb/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/9292f7b8a1cee530f57dfece42a3daee/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/973ea8aea1079a249af62dbd36c4ad37/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/f75790ed9a0a87ca937a9cabe0e8cdc5/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/ca542823dd34a013505aad990b3c6842/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.4.1/381fc1096ba65040d8e80ea43b2e1d9bad02345e/logging-interceptor-3.4.1.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.10.0/7ef0f1d95bf4c0b3ba30bbae25e0e562b05cf75e/okhttp-3.10.0.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.14.0/102d7be47241d781ef95f1581d414b0943053130/okio-1.14.0.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.6/e370a92153bf66da17549ecc78c69ec6c6ec9f41/joda-time-2.9.6.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/org.greenrobot/eventbus/3.1.1/5cd91fd014f5b72292f959748c20a2cefefae77d/eventbus-3.1.1.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/f2eca285084fc9d12db948bb8ac86832/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/c983bf92443a723039c89f2092cb2ae7/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/9cc86245c2e784f7fed270fca0d7ba9c/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/7194e32e356748b179d06de3d1894f8e/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/899904375ea3d732f44b7e0211da3549/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/245d1e0fb2237f991fa8898966e81794/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/b960a0501259b3ea464b492348fc8d6d/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/7f59bf194523006c5c0bbf5fab58af19/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/3293e0937314c3e6bbd81ae0c1cdec5b/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/f9206c71438060fe594f48d19f3c82c8/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/bf2283eb8d6378d5718e581b135c1169/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/58eaebea53693ff9ff4f2559298b1e61/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f0ac34b1f48ca6e26d79ceaece510d6d/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/c8bf25e92cae5e0b4c9e2b2af80b4d86/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/b501946a275f8d13cf67e7a68c8a4db2/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/9f20732a6d9a02018153e64af66e3634/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/6daa0117cb2093a8d3ce0598ae4f686c/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/6993edb72c5efa7cf903017d7d5ffc64/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/com.android.support/collections/28.0.0/c1bcdade4d3cc2836130424a3f3e4182c666a745/collections-28.0.0.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/39b31f45a4a85c8941f06c75c454ffb1/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6c7c362220aa5561f23e79cdd7f9fcde/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/7e83e3a9fddd60cdabf9947388526209/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/fcde7abf099d6b2b2785dd8b70743632/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/8b0d5fd6fdec83dfa539830aa27229ba/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/87136fb1a822268ad2bb20a23646a595/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.1/207a6efae6a3555e326de41f76bdadd9a239cbce/common-1.1.1.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e75f6e91f15612a4faa87342aa1736fa/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.1/e55b70d1f5620db124b3e85a7f4bdc7bd48d9f95/common-1.1.1.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/28.0.0/ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8/support-annotations-28.0.0.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Users/rjawanda/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-15.0.4.aar/ff5e37e44719905ded7e44e68d7c390d/jars/classes.jar(!META-INF/MANIFEST.MF,!**.class)
+-libraryjars /Volumes/lacie/Dev/Android/sdk/platforms/android-28/android.jar
+-libraryjars /Volumes/lacie/Dev/Android/sdk/platforms/android-28/optional/org.apache.http.legacy.jar
+-libraryjars /Volumes/lacie/Dev/Android/sdk/platforms/android-28/optional/android.test.mock.jar
+-libraryjars /Volumes/lacie/Dev/Android/sdk/platforms/android-28/optional/android.test.base.jar
+-libraryjars /Volumes/lacie/Dev/Android/sdk/platforms/android-28/optional/android.test.runner.jar
+
+-forceprocessing
+-printusage /Volumes/lacie/mss/wild/wildlinksdk/wildlinksdk/build/outputs/mapping/prod/release/usage.txt
+-optimizations !code/simplification/arithmetic,!code/simplification/cast,!field/*,!class/merging/*
+-optimizationpasses 5
+-allowaccessmodification
+-printmapping /Volumes/lacie/mss/wild/wildlinksdk/wildlinksdk/build/outputs/mapping/prod/release/mapping.txt
+-dontusemixedcaseclassnames
+-keepattributes *Annotation*,Signature,InnerClasses,EnclosingMethod,Exceptions,InnerClasses,*Annotation*,SourceFile,LineNumberTable,*Annotation*,*Annotation*,*Annotation*
+-verbose
+-dontnote com.android.vending.licensing.ILicensingService,com.google.vending.licensing.ILicensingService,com.google.android.vending.licensing.ILicensingService,android.support.**
+-dontwarn android.support.**,org.joda.convert.**,org.joda.time.**,javax.**,javax.**,okhttp3.**,okio.**,javax.**,io.realm.**,com.crashlytics.**,com.google.android.gms.measurement.AppMeasurement*,com.google.firebase.components.Component$Instantiation,android.security.NetworkSecurityPolicy,android.app.Notification,sun.misc.Unsafe,libcore.io.Memory,com.google.android.apps.common.proguard.UsedBy*,javax.annotation.**,org.checkerframework.**
+-printconfiguration /Volumes/lacie/mss/wild/wildlinksdk/wildlinksdk/config.txt
+-dump /Volumes/lacie/mss/wild/wildlinksdk/wildlinksdk/build/outputs/mapping/prod/release/dump.txt
+-printseeds /Volumes/lacie/mss/wild/wildlinksdk/wildlinksdk/build/outputs/mapping/prod/release/seeds.txt
+
+
+-keep class **.R
+
+-keep class **.R$*
+
+-keep public class com.google.vending.licensing.ILicensingService
+
+-keep public class com.android.vending.licensing.ILicensingService
+
+-keep public class com.google.android.vending.licensing.ILicensingService
+
+# For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
+-keepclasseswithmembers,allowshrinking class * {
+    native <methods>;
+}
+
+# Keep setters in Views so that animations can still work.
+-keepclassmembers public class * extends android.view.View {
+    void set*(***);
+    *** get*();
+}
+
+# We want to keep methods in Activity that could be used in the XML attribute onClick.
+-keepclassmembers class * extends android.app.Activity {
+    public void *(android.view.View);
+}
+
+# For enumeration classes, see http://proguard.sourceforge.net/manual/examples.html#enumerations
+-keepclassmembers enum  * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keepclassmembers class * extends android.os.Parcelable {
+    public static final ** CREATOR;
+}
+
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}
+
+# Preserve annotated Javascript interface methods.
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface
+    <methods>;
+}
+
+# Understand the @Keep support annotation.
+-keep class android.support.annotation.Keep
+
+-keep @android.support.annotation.Keep class * {
+    <fields>;
+    <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep
+    <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep
+    <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep
+    <init>(...);
+}
+
+# Generated by the gradle plugin
+-keep class android.support.design.widget.AppBarLayout {
+    <init>(...);
+}
+
+-keep class android.support.design.widget.AppBarLayout {
+    <init>(...);
+}
+
+-keep class android.support.design.widget.AppBarLayout {
+    <init>(...);
+}
+
+-keep class android.support.design.widget.AppBarLayout {
+    <init>(...);
+}
+
+-keep class android.support.v7.widget.Toolbar {
+    <init>(...);
+}
+
+-keep class android.support.v7.widget.Toolbar {
+    <init>(...);
+}
+
+-keep class android.support.v7.widget.Toolbar {
+    <init>(...);
+}
+
+-keep class android.support.v7.widget.Toolbar {
+    <init>(...);
+}
+
+-keep class me.wildlinksdk.android.broadcast_receivers.BootBroadcastReceiver {
+    <init>(...);
+}
+
+-keep class me.wildlinksdk.android.broadcast_receivers.EnableReceiver {
+    <init>(...);
+}
+
+-keep class me.wildlinksdk.android.services.MyFirebaseInstanceIDService {
+    <init>(...);
+}
+
+-keep class me.wildlinksdk.android.services.MyFirebaseMessagingService {
+    <init>(...);
+}
+
+-keep class me.wildlinksdk.android.services.TokenService {
+    <init>(...);
+}
+
+-keep class me.wildlinksdk.android.services.WildlinkForegroundService {
+    <init>(...);
+}
+
+-keep class me.wildlinksdk.android.services.WlMyPackageReplacedReceiver {
+    <init>(...);
+}
+
+-keep class me.wildlinksdk.android.ui.WlEnableActivity {
+    <init>(...);
+}
+
+-keep class me.wildlinksdk.android.ui.config.WlConfigActivity {
+    <init>(...);
+}
+
+-keep class me.wildlinksdk.android.ui.logs.WlLogActivity {
+    <init>(...);
+}
+
+-keep class me.wildlinksdk.android.ui.settings.WlSettingsActivity {
+    <init>(...);
+}
+
+-keep class me.wildlinksdk.android.ui.web.WlWebViewActivity {
+    <init>(...);
+}
+
+-keep class org.joda.time.** {
+    <fields>;
+    <methods>;
+}
+
+-keep interface  org.joda.time.** {
+    <fields>;
+    <methods>;
+}
+
+-keep class me.wildlink.** {
+    <fields>;
+    <methods>;
+}
+
+-keep,allowshrinking public class * extends io.realm.RealmObject
+
+-keep @io.realm.annotations.RealmModule class *
+
+-keep class io.realm.** {
+    <fields>;
+    <methods>;
+}
+
+-keepclasseswithmembers class io.requery.android.database.** {
+    native <methods>;
+    public <init>(...);
+}
+
+-keep,allowshrinking class io.requery.android.database.** {
+    <fields>;
+    <methods>;
+}
+
+-keep public class io.requery.android.database.sqlite.SQLiteFunction {
+    <fields>;
+    <methods>;
+}
+
+-keep public class io.requery.android.database.sqlite.SQLiteCustomFunction {
+    <fields>;
+    <methods>;
+}
+
+-keep public class io.requery.android.database.sqlite.SQLiteCursor {
+    <fields>;
+    <methods>;
+}
+
+-keep public class io.requery.android.database.sqlite.SQLiteDebug** {
+    <fields>;
+    <methods>;
+}
+
+-keep public class io.requery.android.database.sqlite.SQLiteDatabase {
+    <fields>;
+    <methods>;
+}
+
+-keep public class io.requery.android.database.sqlite.SQLiteOpenHelper {
+    <fields>;
+    <methods>;
+}
+
+-keep public class io.requery.android.database.sqlite.SQLiteStatement {
+    <fields>;
+    <methods>;
+}
+
+-keep public class io.requery.android.database.CursorWindow {
+    <fields>;
+    <methods>;
+}
+
+-keep public class * extends java.lang.Exception
+
+-keep class com.crashlytics.** {
+    <fields>;
+    <methods>;
+}
+
+# Copyright (C) 2015 The Android Open Source Project
+# 
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# 
+#      http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# CoordinatorLayout resolves the behaviors of its child components with reflection.
+-keep public class * extends android.support.design.widget.CoordinatorLayout$Behavior {
+    public <init>(android.content.Context,android.util.AttributeSet);
+    public <init>();
+}
+
+# Copyright (C) 2018 The Android Open Source Project
+# 
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# 
+#      http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# Ensure that reflectively-loaded inflater is not obfuscated. This can be
+# removed when we stop supporting AAPT1 builds.
+-keep,allowshrinking class android.support.v7.app.AppCompatViewInflater
+
+# aapt is not able to read app::actionViewClass and app:actionProviderClass to produce proguard
+# keep rules. Add a commonly used SearchView to the keep list until b/109831488 is resolved.
+-keep class android.support.v7.widget.SearchView {
+    <init>(...);
+}
+
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzzs {
+    <fields>;
+}
+
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzzs {
+    <fields>;
+}
+
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzzs {
+    <fields>;
+}
+
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzzs {
+    <fields>;
+}
+
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzzs {
+    <fields>;
+}
+
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzzs {
+    <fields>;
+}
+
+# b/35135904 Ensure that proguard will not strip the mResultGuardian.
+-keepclassmembers class com.google.android.gms.common.api.internal.BasePendingResult {
+    com.google.android.gms.common.api.internal.BasePendingResult$ReleasableResultGuardian mResultGuardian;
+}
+
+# Proguard flags for consumers of the Google Play services SDK
+# https://developers.google.com/android/guides/setup#add_google_play_services_to_your_project
+# Keep SafeParcelable NULL value, needed for reflection by DowngradeableSafeParcel
+-keepclassmembers public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
+    public static final *** NULL;
+}
+
+# Needed for Parcelable/SafeParcelable classes & their creators to not get renamed, as they are
+# found via reflection.
+-keep class com.google.android.gms.common.internal.ReflectedParcelable
+
+-keep,allowshrinking class * extends com.google.android.gms.common.internal.ReflectedParcelable
+
+-keepclassmembers class * extends android.os.Parcelable {
+    public static final *** CREATOR;
+}
+
+# Keep the classes/members we need for client functionality.
+-keep @interface  android.support.annotation.Keep
+
+-keep @android.support.annotation.Keep class *
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep
+    <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep
+    <methods>;
+}
+
+# Keep the names of classes/members we need for client functionality.
+-keep @interface  com.google.android.gms.common.annotation.KeepName
+
+-keep,allowshrinking @com.google.android.gms.common.annotation.KeepName class *
+
+-keepclassmembers,allowshrinking class * {
+    @com.google.android.gms.common.annotation.KeepName
+    <fields>;
+    @com.google.android.gms.common.annotation.KeepName
+    <methods>;
+}
+
+# Keep Dynamite API entry points
+-keep @interface  com.google.android.gms.common.util.DynamiteApi
+
+-keep @com.google.android.gms.common.util.DynamiteApi public class * {
+    public <fields>;
+    public <methods>;
+}
+
+# Copyright (C) 2015 The Android Open Source Project
+# 
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# 
+#      http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# When layoutManager xml attribute is used, RecyclerView inflates
+# LayoutManagers' constructors using reflection.
+-keep public class * extends android.support.v7.widget.RecyclerView$LayoutManager {
+    public <init>(android.content.Context,android.util.AttributeSet,int,int);
+    public <init>();
+}
+
+# Copyright (C) 2016 The Android Open Source Project
+# 
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# 
+#      http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# keep setters in VectorDrawables so that animations can still work.
+-keepclassmembers class android.support.graphics.drawable.VectorDrawableCompat$* {
+    void set*(***);
+    *** get*();
+}
+
+# Copyright (C) 2017 The Android Open Source Project
+# 
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# 
+#      http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# Keep a field in transition that is used to keep a reference to weakly-referenced object
+-keepclassmembers class android.support.transition.ChangeBounds$* extends android.animation.AnimatorListenerAdapter {
+    android.support.transition.ChangeBounds$ViewBounds mViewBounds;
+}
+
+# Copyright (C) 2016 The Android Open Source Project
+# 
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# 
+#      http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# CoordinatorLayout resolves the behaviors of its child components with reflection.
+-keep public class * extends android.support.design.widget.CoordinatorLayout$Behavior {
+    public <init>(android.content.Context,android.util.AttributeSet);
+    public <init>();
+}
+
+# Copyright (C) 2017 The Android Open Source Project
+# 
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# 
+#      http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# Prevent Parcelable objects from being removed or renamed.
+-keep class android.support.v4.media.** extends android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+# Prevent Parcelable objects from being removed or renamed.
+-keep class android.support.mediacompat.** extends android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+-keep class android.support.v4.media.Audio* extends android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+-keep class android.support.v4.media.MediaBrowserCompatUtils* extends android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+-keep class android.support.v4.media.MediaBrowserProtocol* extends android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+-keep class android.support.v4.media.MediaBrowserService* extends android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+-keep class android.support.v4.media.Volume* extends android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+-keep class android.support.v4.media.app.** extends android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+-keep class android.support.v4.media.session.MediaButton* extends android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+# aapt2 is not (yet) keeping FQCNs defined in the appComponentFactory <application> attribute
+-keep class android.support.v4.app.CoreComponentFactory
+
+-keep public class * extends androidx.versionedparcelable.VersionedParcelable
+
+-keep public class android.support.**Parcelizer {
+    <fields>;
+    <methods>;
+}
+
+-keep public class androidx.**Parcelizer {
+    <fields>;
+    <methods>;
+}
+
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+-keepclassmembers enum  android.arch.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep class * extends android.arch.lifecycle.LifecycleObserver
+
+-keep class * extends android.arch.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @android.arch.lifecycle.OnLifecycleEvent
+    <fields>;
+    @android.arch.lifecycle.OnLifecycleEvent
+    <methods>;
+}
+
+-keep class * extends android.arch.lifecycle.ViewModel {
+    <init>();
+}
+
+-assumenosideeffects class android.util.Log {
+    public static boolean isLoggable(java.lang.String,int);
+    public static int v(...);
+    public static int w(...);
+    public static int d(...);
+    public static int e(...);
+}

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="wl_notification_buttons_share_text">SHARE</string>
+    <string name="wl_notification_buttons_undo_text">UNDO</string>
+    <string name="wl_notification_buttons_settings_text">SETTINGS</string>
+
+    <string name="wl_notification_buttons_enable_text">ENABLE</string>
+    <string name="wl_notification_buttons_learn_more_text">LEARN MORE</string>
+    <string name="wl_notification_buttons_terms_text">TERMS &amp; PRIVACY</string>
+
+    <string name="wl_notification_buttons_view_earnings_text">VIEW EARNINGS</string>
+
+
+
+    <string name="wl_notification_text">Link converted!  Anyone who buys a product through this link will earn you money!</string>
+    <string name="wl_notification_title_text">Wildlink</string>
+    <string name="wl_notification_content_text">Content text must be short</string>
+    <string name="wl_notification_content_info_text">Link converted!  Anyone who buys a product through this link will earn you money!</string>
+
+    <string name="wl_notification_default_title_text">%s now includes Wildlink</string>
+    <string name="wl_notification_default_content_text">Send clearner links and earn cash back</string>
+
+    <string name="wl_notification_default_title_enabled_state_text">Wildlink enabled through %s</string>
+    <string name="wl_notification_default_content_enabled_state_text">Send clearner links and earn cash back</string>
+
+
+    <string name="wl_notification_large_view_enabled_state_line1_text">Wildlink now enabled through %s</string>
+    <string name="wl_notification_large_view_enabled_state_line2_text">Send cleaner links and earn cash back</string>
+
+    <string name="wl_notification_large_view_default_state_line1_text">%s now includes Wildlink</string>
+    <string name="wl_notification_large_view_default_state_line2_text">Send cleaner links and earn cash back</string>
+
+    <string name="wl_notification_large_view_line1_peek_text">It\'s working!</string>
+    <string name="wl_notification_large_view_line2_peek_text">Paste link anywhere to share and earn</string>
+
+
+    <string name="wl_notification_default_title_peek_text">It\'s working!</string>
+    <string name="wl_notification_default_content_peek_text">Paste link anywhere to share and earn</string>
+    <string name="wl_notification_button_view_earnings_text">VIEW EARNINGS</string>
+
+
+    <string name="channel_id">channel_id_0001</string>
+    <string name="channel_name">Wildlink Channel</string>
+    <string name="wl_notification_not_enabled_terms_text">TERMS &amp; PRIVACY</string>
+    <string name="wl_notification_not_enabled_enable_text">ENABLE</string>
+
+
+    <string name="wl_notification_not_enabled_learn_more_text">LEARN MORE</string>
+
+    <string name="wl_notification_enabled_terms_text">TERMS &amp; PRIVACY</string>
+
+
+
+    <string name="wl_notification_buttons_converted_state_preview">PREVIEW</string>
+    <string name="wl_notification_buttons_converted_state_undo">UNDO</string>
+    <string name="wl_notification_buttons_converted_state_settings">SETTINGS</string>
+
+    <string name="wl_whats_new_dialog_title_text">What\'s New</string>
+    <string name="wl_whats_new_dialog_text">This update of %s includes Wildlink, which earns you cash on links you share when they result in a purchase. Wildlink transforms links and notifies you when you earn.</string>
+    <string name="wl_whats_new_dialog_enable_button_text">Enable</string>
+    <string name="wl_whats_new_dialog_learn_more_text">Learn more</string>
+    <string name="wl_whats_new_dialog_new_no_thanks_text">No thanks, I don\'t like money</string>
+    <string name="wl_whats_new_dialog_terms1_text">By selecting Enable you agree to Wildlink\'s</string>
+    <string name="wl_whats_new_dialog_terms2_text">Terms of Use</string>
+    <string name="wl_whats_new_dialog_terms3_text">and</string>
+    <string name="wl_whats_new_dialog_terms4_text">Privacy Policy</string>
+    <string name="wl_whats_new_dialog_terms_url">http://www.yahoo.com</string>
+    <string name="wl_whats_new_dialog_privacy_policy_url">http://www.cnn.com</string>
+    <string name="wl_app_name">Wildlink</string>
+
+
+
+    <string name="wl_disable_dialog_disable_button_text">Disable</string>
+    <string name="wl_disable_dialog_title_text">Sorry to see you go</string>
+    <string name="wl_disable_dialog_text">Disabling means we will not convert links to make you cash. Is this what you really want?</string>
+    <string name="wl_disable_dialog_enable_button_text">Enable</string>
+    <string name="wl_disable_dialog_learn_more_text">Learn more</string>
+    <string name="wl_disable_dialog_stay">I\'m staying... I DO like money!</string>
+
+    <string name="wl_settings_list_row_login_signin_text">Log In/Sign Up</string>
+    <string name="wl_settings_list_row_earnings_dashboard_text">Earnings Dashboard</string>
+    <string name="wl_settings_list_row_enable_wildlink_title_text">Enable Wildlink</string>
+    <string name="wl_settings_list_row_enable_wildlink_sub_text">Wildlink automatically converts eligible links into shorter versions that make you money</string>
+    <string name="wl_settings_list_row_notify_title_text">Notification on Wildlink creation</string>
+    <string name="wl_settings_list_row_notify_sub_text">Show notification every time cliboard is converted to Wildlink</string>
+    <string name="wl_settings_list_row_shorten_links_title_text">Shorten links</string>
+    <string name="wl_settings_list_row_shorten_links_sub_text">Your link will look like http://wildlink.bestbuy/3nsjBcs verus the original link length</string>
+
+    <string name="wl_settings_list_row_privacy_text">Wildlink Privacy Policy</string>
+    <string name="wl_settings_list_row_terms_text">Wildlink Terms of Use</string>
+    <string name="wl_settings_title_text">Wildlink Settings</string>
+
+    <string name="wl_login_dialog_title_text">Log In</string>
+    <string name="wl_login_dialog_text">Enter your phone number to receive a verification code.</string>
+    <string name="wl_login_dialog_phone_hint">123-456-7890</string>
+    <string name="wl_login_dialog_send_text">SEND</string>
+    <string name="wl_login_dialog_close_text">CLOSE</string>
+
+    <string name="wl_verify_code_dialog_title_text">Verify code</string>
+    <string name="wl_verify_code_dialog_text">We just sent a code to your phone. Please enter it here to complete your log in.</string>
+    <string name="wl_verify_code_dialog_phone_hint">code</string>
+    <string name="wl_verify_code_dialog_resend_text">RESEND</string>
+    <string name="wl_verify_code_dialog_close_text">CLOSE</string>
+    <string name="wl_verify_code_dialog_verify_text">VERIFY</string>
+    <string name="wl_signup_code_validated">Your all set!</string>
+    <string name="wl_settings_list_row_log_out">Log Out</string>
+
+    <string name="wl_logout_dialog_text">Are you sure you want to logout?</string>
+    <string name="wl_logout_dialog_title_text">Message</string>
+    <string name="wl_resend_success">Please enter the new code</string>
+
+    <string name="wl_notification_button_learn_more_text">LEARN MORE</string>
+    <string name="wl_notification_button_settings_text">SETTINGS</string>
+
+    <string name="wl_non_persistent_notification_title_text">Wildlink not running</string>
+    <string name="wl_notification_settings_title_text">Wildlink is ready</string>
+    <string name="wl_notification_settings_sub_title_text">Earn when you copy &amp; send links to products you</string>
+    <string name="wl_notification_preview_title_text">Wildlink improved the link you copied</string>
+    <string name="wl_notification_preview_sub_title_text">Paste your Wildlink anywhere to share and earn</string>
+
+    <string name="wl_settings_list_logged_in">Logged in as</string>
+    <string name="wl_settings_list_row_logout_text">Log Out</string>
+
+    <string name="wl_earnings_action_bar_title">Earnings</string>
+    <string name="wl_terms_and_privacy_action_bar_title">Terms and Privacy</string>
+    <string name="wl_learn_more_action_bar_title">Learn More</string>
+    <string name="wl_terms_of_use_action_bar_title">Terms of Use</string>
+    <string name="wl_privacy_policy_action_bar_title">Privacy Policy</string>
+
+    <string name="wl_push_commission_earned_title">Congrats</string>
+    <string name="wl_push_commission_earned_body">You earned $%1$s from your %2$s Wildlink. Tap/Click to view earnings.</string>
+    <string name="wl_push_commission_earned_batch_body">You earned $%1$s from your Wildlinks for %2$s and %3$s others. Tap to view earnings.</string>
+    <string name="wl_push_min_payment_reached_title">You\'r ready for a payout</string>
+    <string name="wl_push_min_payment_reached_body">Your Wildlink earning are ready to withdraw. Tap to view your dashboard.</string>
+
+    <string name="wl_push_min_payment_reached_no_pay_method_title">Ready for payout</string>
+    <string name="wl_push_min_payment_reached_no_pay_method_body">Your Wildlink earnings are ready to withdraw. Tap to view your dashboard.</string>
+
+    <string name="wl_push_deposit_success_title">Payout completed</string>
+    <string name="wl_push_deposit_success_body">Wildlink deposited %s in your PayPal account.</string>
+
+    <string name="wl_push_deposit_error_title">Please update account settings</string>
+    <string name="wl_push_deposit_error_body">Wildlink\'s deposit to your account was unsuccessful. Please tap to double-check your Wildlink payment settings.</string>
+
+
+    <string name="wl_push_notification_message_amount_title">You\'ve started earning</string>
+    <string name="wl_push_notification_message_amount_body">Claim your first click bonus of %s by verifying your phone number</string>
+
+    <string name="wl_push_notification_message_amount_body_on_fail">Claim your first click bonus of %s by verifying your phone number</string>
+
+
+    <string name="wl_notification_feedback">Feedback</string>
+
+
+
+
+    <string name="wl_config_title_text">Wildlink Config</string>
+    <string name="wl_config_dialog_text">Pick an alternate base url or enter a new one</string>
+    <string name="wl_config_dialog_title_text">Alter Url</string>
+    <string name="wl_config_dialog_base_url_hint">https://domain</string>
+
+    <string name="wl_base_url0">Choose...</string>
+    <string name="wl_base_url1">https://api.wfi.re</string>
+    <string name="wl_base_url2">https://dev-api.wf.re</string>
+    <string name="wl_base_url3">https://stage-api.wf.re</string>
+    <string name="wl_base_url4">http://localhost:9872</string>
+
+    <string name="wl_config_dialog_cancel_text">Cancel</string>
+    <string name="wl_config_dialog_ok_text">Ok</string>
+
+
+    <string name="wl_log_email">EMail:</string>
+    <string name="wl_log_content">By Entering you email and pressing submit you will allow the debugging logs to be viewed by Wildfire-Corp. This will help us determine your problem.</string>
+    <string name="wl_log_upload_tv">Upload</string>
+    <string name="wl_log_email_subject">Logs from Wildlink</string>
+    <string name="wl_log_title_text">Wildink Log</string>
+
+    <string name="wl_undo_pressed_by_user">Clipboard has been reverted</string>
+</resources>

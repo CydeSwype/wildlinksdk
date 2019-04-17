@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/notification_buttons_layout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="3"
+              android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:id="@+id/wl_notification_notenabled_enable_container"
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+
+            android:background="@drawable/wl_notification_button_selector"
+
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+
+
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/wl_notenabled_enable_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                android:text="@string/wl_notification_not_enabled_enable_text"
+                android:textStyle="bold"
+                android:textColor="@drawable/wl_notification_button_text_selector"
+                android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wl_notification_notenabled_learn_more_container"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/wl_notification_button_selector"
+
+            android:layout_marginBottom="3dp">
+
+            <TextView
+                android:id="@+id/wl_notification_notenabled_learn_more_tv"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+
+                android:text="@string/wl_notification_not_enabled_learn_more_text"
+                android:textStyle="bold"
+
+                android:textColor="@drawable/wl_notification_button_text_selector"
+                android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wl_notification_notenabled_terms_container"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/wl_notification_button_selector"
+
+
+            android:layout_toRightOf="@id/wl_notification_notenabled_learn_more_container">
+
+            <TextView
+                android:id="@+id/wl_notenabled_terms_tv"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+
+                android:gravity="center"
+
+                android:text="@string/wl_notification_not_enabled_terms_text"
+                android:textColor="@drawable/wl_notification_button_text_selector"
+                android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+        </LinearLayout>
+
+
+</LinearLayout>

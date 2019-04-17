@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+
+          package="me.wildlinksdk.android">
+
+    <uses-sdk android:minSdkVersion="19"
+        android:targetSdkVersion="27"
+        />
+
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:node="remove"/>-->
+    <!--<uses-permission android:name="android.permission.WAKE_LOCK" />-->
+
+    <application>
+
+        <service android:enabled="true" android:name="me.wildlinksdk.android.services.TokenService" android:exported="false"  android:allowBackup="false" tools:replace="allowBackup" />
+
+        <service android:enabled="true" android:name="me.wildlinksdk.android.services.WildlinkForegroundService" android:exported="true"  android:allowBackup="true" tools:replace="allowBackup" />
+
+
+        <service
+            android:name="me.wildlinksdk.android.services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+
+            </intent-filter>
+
+        </service>
+
+        <service
+            android:name="me.wildlinksdk.android.services.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+
+        <receiver android:enabled="true" android:exported="true" android:name="me.wildlinksdk.android.services.WlMyPackageReplacedReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+
+        <receiver android:enabled="true" android:exported="true" android:name="me.wildlinksdk.android.broadcast_receivers.EnableReceiver"/>
+
+
+        <receiver android:name="me.wildlinksdk.android.broadcast_receivers.BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>
