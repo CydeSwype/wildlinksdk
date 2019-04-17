@@ -37,39 +37,28 @@ Extend your application class
 
 ```Java
 
-  // for app ID and secret please contact Wildfire (support@wildlink.me)
-    public class MainActivity extends AppCompatActivity {
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate();
-            WildlinkSdk.getIntance().init(this, null, "YOUR_APP_ID", "YOUR_APP_SECRET");
-        }
+// for app ID and secret please contact Wildfire (support@wildlink.me)
+public class MainActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        WildlinkSdk.getIntance().init(this, "YOUR_APP_ID", "YOUR_APP_SECRET");
+
+        WildlinkSdk.getIntance().startClipboardMonitoringService(new SimpleListener() {
+            @Override
+            public void onSuccess() {
+                Log.d("Wildlink", "successfully started Wildlink clipboard monitor");
+            }
+
+            @Override
+            public void onFailure(final ApiError apiError) {
+                Log.d("Wildlink", "on failure = " + apiError.getMessage());
+            }
+        });
     }
-
-```
-
-In your main Launcher activity in onCreate() initialize the monitor
-
-
-```Java
-
-    WildlinkSdk.getIntance().startClipboardMonitoringService(new SimpleListener() {
-          @Override
-          public void onSuccess() {
-              Log.d("Wildlink", "successfully started Wildlink clipboard monitor");
-          }
-
-          @Override
-          public void onFailure(final ApiError apiError) {
-              Log.d("Wildlink", "on failure = " + apiError.getMessage());
-          }
-    });
-
-```
-
-
-
-
+}
 
 ```
 
